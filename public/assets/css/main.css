@@ -1769,3 +1769,10 @@ section,
   height: 100vh;
  }
 }
+.header {
+  transition: transform 0.3s ease-in-out;
+}
+
+.header.hidden {
+  transform: translateY(-100%);
+}

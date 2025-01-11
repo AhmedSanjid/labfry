@@ -1732,3 +1732,13 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.header .logo-container .logo {
+  margin-bottom: 0;
+}

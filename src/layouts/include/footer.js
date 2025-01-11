@@ -61,9 +61,9 @@ function Footer() {
       </div>
   
       <div className="container copyright text-center mt-4">
-        <p> © <span>Copyright</span> <strong className="px-1 sitename">Squadfree</strong> <span>All Rights Reserved</span></p>
+        <p> © <span>Copyright</span> <strong className="px-1 sitename">LabFry Tech</strong> <span>All Rights Reserved</span></p>
         <div className="credits">
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          Designed by <a href="/">Sanjid Ahmed Mukut</a>
         </div>
       </div>
   

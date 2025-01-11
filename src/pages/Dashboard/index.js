@@ -3,7 +3,7 @@ import AdminLayout from '../../layouts/AdminLayout';
 import { useLocation, Link} from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import labfry from 'labfry.mp4';
+import labfry from '../../assets/videos/labfry.mp4';
 import Container from 'react-bootstrap/Container'
 
 function Dashboard() {
@@ -11,13 +11,16 @@ function Dashboard() {
   return (
     <AdminLayout>
 
-<div className='Txt'>
-  <video autoPlay loop muted>
-    <source src={ labfry.mp4 } type="video/mp4"/>
+<div className='Txt' style={{position: 'relative', width: '100%', height: '100vh'}}>
+  <video autoPlay loop muted 
+    style={{width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0, zIndex: 1}}>
+    <source src={ labfry } type="video/mp4"/>
   </video>
-  <div className='text-wrapper'>
-    <h1>Empowering Your Digital Vision</h1>
-    <p>Partner with Labfry Technology for seamless mobile and web app development.
+  <div className='text-wrapper' style={{position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 2, color: 'white', textAlign: 'center', maxWidth: '1000px', padding: '20px'}}>
+    <h1 style={{fontWeight: 'bold', fontSize: '4rem', marginBottom: '2rem', letterSpacing: '1px'
+    }}>Empowering Your Digital Vision</h1>
+    <p style={{ fontWeight: 'bold', fontSize: '1.8rem', lineHeight: '1.6', letterSpacing: '0.5px'
+    }}>Partner with Labfry Technology for seamless mobile and web app development.
       We handle the entire process, delivering innovative solutions while you focus on growing your business.</p>
   </div>
 </div>
@@ -97,7 +100,7 @@ function Dashboard() {
       <div className="col-xl-3 col-md-6 d-flex">
         <div className="service-item position-relative">
           <div className="icon"><i className="bi bi-activity icon"></i></div>
-          <h4><a href="service-details.html" className="stretched-link">Lorem Ipsum</a></h4>
+          <h4><a href="service-details.html" className="stretched-link">Marketing</a></h4>
           <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
         </div>
       </div>
@@ -106,7 +109,7 @@ function Dashboard() {
       <div className="col-xl-3 col-md-6 d-flex">
         <div className="service-item position-relative">
           <div className="icon"><i className="bi bi-bounding-box-circles icon"></i></div>
-          <h4><a href="service-details.html" className="stretched-link">Sed ut perspici</a></h4>
+          <h4><a href="service-details.html" className="stretched-link">Web Development</a></h4>
           <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
         </div>
       </div>
@@ -115,7 +118,7 @@ function Dashboard() {
       <div className="col-xl-3 col-md-6 d-flex">
         <div className="service-item position-relative">
           <div className="icon"><i className="bi bi-calendar4-week icon"></i></div>
-          <h4><a href="service-details.html" className="stretched-link">Magni Dolores</a></h4>
+          <h4><a href="service-details.html" className="stretched-link">Product Management</a></h4>
           <p>Excepteur sint occaecat cupit non proident, sunt in culpa qui officia</p>
         </div>
       </div>
@@ -124,7 +127,7 @@ function Dashboard() {
       <div className="col-xl-3 col-md-6 d-flex">
         <div className="service-item position-relative">
           <div className="icon"><i className="bi bi-broadcast icon"></i></div>
-          <h4><a href="service-details.html" className="stretched-link">Nemo Enim</a></h4>
+          <h4><a href="service-details.html" className="stretched-link">Graphic Design</a></h4>
           <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
         </div>
       </div>
